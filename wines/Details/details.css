@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6cfac;
+  margin: 0; /* Reset default margin */
+}
+
+.caroussel img {
+  width: 100%; /* Make the image responsive */
+}
+
+.body {
+  display: flex;
+  flex-direction: column; /* Adjust for mobile view */
+  width: 80%; /* Adjust width for better responsiveness */
+  margin: auto; /* Center the content */
+  padding: 20px;
+}
+
+.body h1 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #990033;
+  letter-spacing: 2px;
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Adjust for mobile view */
+}
+
+.container .left {
+  width: 100%;
+  text-align: center; /* Center the image */
+}
+
+.container .left img {
+  width: auto;
+  height: 450px;
+}
+
+.container .right {
+  width: 100%;
+}
+
+/* Add media query for larger screens */
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Side by side for larger screens */
+  }
+
+  .container .left {
+    width: 30%;
+    text-align: center; /* Center the image */
+  }
+
+  .container .left img {
+    width: auto; /* Set the image width to 100% to prevent stretching */
+    height: 600px; /* Maintain the aspect ratio */
+  }  
+
+  .container .right {
+    width: 70%;
+    margin-left: 20px; /* Add some space between left and right */
+  }
+}
+
+.details {
+  margin-bottom: 20px; /* Add space between details and buttons */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around; /* Space out the buttons */
+}
+
+.btn1 {
+  display: inline-block; /* Change back to inline-block for buttons */
+  padding: 10px 30px;
+  margin: 7px;
+  background-color: #990033;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.btn1:hover {
+  background-color: #c16684;
+}
+
+.footer {
+  display: flex;
+  background-color: #990033;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.footer p {
+  font-size: 20px;
+  margin-left: 20%;
+}
+
+.footer i {
+  padding: 20px;
+  font-size: 40px;
+  margin-right: 20%;
+}

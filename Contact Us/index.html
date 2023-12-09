@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../Header Menu and Modal/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap");
+      #map {
+        height: 300px; /* Adjust the height as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <div class="logo">
+        <img
+          src="./original-logo adentro.png"
+          alt="Vinos Adentro Logo"
+          height="80px"
+          width="115px"
+        />
+      </div>
+      <div class="menu" id="openModal">
+        <p>MENU</p>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <div class="modal" id="myModal">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="modal-content">
+        <nav>
+          <ul>
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../About/index.html">About us</a></li>
+            <li>
+              <a href="../wines/index.html">Wines</a>
+              <a href="#" class="next-modal">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i
+                ><i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li><a href="../Gallery/index.html">Gallery</a></li>
+            <li><a href="../Contact Us/index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="modal" id="secondModal">
+      <span class="close" id="closeSecondModal">&times;</span>
+      <div class="modal-content">
+        <nav>
+          <a href="#" class="prev-modal">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i
+            ><i class="fa fa-chevron-left" aria-hidden="true"></i>
+            Back
+          </a>
+          <ul>
+            <li><a href="../wines/Details/Malbec/index.html">Malbec</a></li>
+            <li><a href="../wines/Details/Merlot/index.html">Merlot</a></li>
+            <li>
+              <a href="../wines/Details/Torrentes/index.html">Torrentes</a>
+            </li>
+            <li>
+              <a href="../wines/Details/GranNevado/index.html">Gran Nevado</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- <section class="carousel">
+      <img src="./Google Earth image.jpeg" alt="" />
+    </section> -->
+    <iframe class="carousel" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d379.7120686148093!2d-66.16254709426306!3d-25.120461031827524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941c1e4204b94777%3A0xccc41c5fd8265045!2sCachi%2C%20Salta%20Province%2C%20Argentina!5e0!3m2!1sen!2s!4v1702141696027!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <section class="body">
+      <h1>Contact Us</h1>
+      <div class="contact-form">
+        <!-- Message Box -->
+        <div class="message-div">
+          <div class="info-box">
+            <p>We're looking for your message!</p>
+          </div>
+          <label for="message">Message:</label>
+          <div class="message-div-one">
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+          </div>
+        </div>
+
+        <!-- Name Input -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <!-- Email Input -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <!-- Captcha -->
+        <div class="form-group">
+          <label for="captcha">Please Confirm:</label>
+          <!-- You can integrate a third-party captcha service here -->
+          <input type="email" id="captcha" name="captcha" required />
+        </div>
+
+        <button type="submit">Submit</button>
+      </div>
+    </section>
+
+    <section class="footer">
+      <p>
+        Vinos Adentro 2685 above sea level <br />
+        Cachi/Argentina
+      </p>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </section>
+
+    <script src="../Header Menu and Modal/header.js"></script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe49znMIqsCSFp75-puGaiGF_JAuuVnxo&callback=initMap"
+    ></script>
+    <script>
+      function initMap() {
+        var myLatLng = { lat: -26.1255, lng: -66.1602 };
+
+        var map = new google.maps.Map(
+          document.getElementById("map"),
+          {
+            zoom: 15,
+            center: myLatLng,
+          }
+        );
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "Your Marker Title",
+        });
+      }
+    </script>
+  </body>
+</html>

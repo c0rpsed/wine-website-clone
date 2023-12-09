@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../Header Menu and Modal/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <section class="header">
+      <div class="logo">
+        <img
+          src="./original-logo adentro.png"
+          alt="Vinos Adentro Logo"
+          height="80px"
+          width="115px"
+        />
+      </div>
+      <div class="menu" id="openModal">
+        <p>MENU</p>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <div class="modal" id="myModal">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="modal-content">
+        <nav>
+          <ul>
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../About/index.html">About us</a></li>
+            <li>
+              <a href="../wines/index.html">Wines</a>
+              <a href="#" class="next-modal">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i
+                ><i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li><a href="../Gallery/index.html">Gallery</a></li>
+            <li><a href="../Contact Us/index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="modal" id="secondModal">
+      <span class="close" id="closeSecondModal">&times;</span>
+      <div class="modal-content">
+        <nav>
+          <a href="#" class="prev-modal">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i
+            ><i class="fa fa-chevron-left" aria-hidden="true"></i>
+            Back
+          </a>
+          <ul>
+            <li><a href="../wines/Details/Malbec/index.html">Malbec</a></li>
+            <li><a href="../wines/Details/Merlot/index.html">Merlot</a></li>
+            <li>
+              <a href="../wines/Details/Torrentes/index.html">Torrentes</a>
+            </li>
+            <li>
+              <a href="../wines/Details/GranNevado/index.html">Gran Nevado</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="carousel">
+      <img src="./farms.jpeg" alt="Farms Image" />
+    </section>
+
+    <section class="body">
+      <div class="container">
+        <div class="left">
+          <img src="./Image 1.jpeg" alt="" />
+        </div>
+        <div class="right">
+          <h1>About Us</h1>
+          <p>
+            Attracted by the majestic mountains of the Andes, Viera Merz and
+            ChristianxGötz made several journeys to the northwest of Argentina.
+            <br /><br />
+
+            Fascinated by the mountains and the pristine landscape, in July 2005
+            we decided to purchase land in Cachi Adentro, at the foot of the
+            Nevado de Cachi. <br />
+            <br />
+
+            ChristianzGötz
+          </p>
+        </div>
+      </div>
+      <div class="container container1">
+        <div class="right">
+          <h1>History</h1>
+          <p>
+            After acquiring the land, we put all our energy and passion into
+            developing the infrastructure of the farm. In stages we planted
+            altogether 8.25 hectares of vines and a walnut orchard measuring 1.5
+            hectares. With the invaluable help of three employees we built up
+            the finca from scratch. So now, we are proud of our six hectares of
+            Malbec, one hectare of Merlot and one and a half hectares of
+            Torrontés vines. We have our grapes vinified into elegant wines by a
+            modern winery nearby.<br />
+            <br />
+
+            Our next project is to build our own “bodega”. We seize this
+            opportunity despite the challenges of building a winery in an
+            isolated region. <br />
+            <br />
+
+            Since the summer of 2017 we are exporting the ADENTRO wines to
+            Switzerland, and we are delighted with the positive feedback.
+          </p>
+        </div>
+        <div class="left" style="padding: 20px">
+          <img src="./Image 2.jpeg" alt="" height="400px" />
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel1">
+      <img src="./farms1.jpg" alt="Farms Image" />
+    </section>
+
+    <section class="footer">
+      <p>
+        Vinos Adentro 2685 above sea level <br />
+        Cachi/Argentina
+      </p>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </section>
+
+    <script src="../Header Menu and Modal/header.js"></script>
+  </body>
+</html>

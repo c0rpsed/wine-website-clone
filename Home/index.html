@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home EN</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../Header Menu and Modal/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap");
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <div class="logo">
+        <img
+          src="./original-logo adentro.png"
+          alt="Vinos Adentro Logo"
+          height="80px"
+          width="115px"
+        />
+      </div>
+      <div class="menu" id="openModal">
+        <p>MENU</p>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <div class="modal" id="myModal">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="modal-content">
+        <nav>
+          <ul>
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../About/index.html">About us</a></li>
+            <li>
+              <a href="../wines/index.html">Wines</a>
+              <a href="#" class="next-modal">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i
+                ><i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li><a href="../Gallery/index.html">Gallery</a></li>
+            <li><a href="../Contact Us/index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="modal" id="secondModal">
+      <span class="close" id="closeSecondModal">&times;</span>
+      <div class="modal-content">
+        <nav>
+          <a href="#" class="prev-modal">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i
+            ><i class="fa fa-chevron-left" aria-hidden="true"></i>
+            Back
+          </a>
+          <ul>
+            <li><a href="../wines/Details/Malbec/index.html">Malbec</a></li>
+            <li><a href="../wines/Details/Merlot/index.html">Merlot</a></li>
+            <li>
+              <a href="../wines/Details/Torrentes/index.html">Torrentes</a>
+            </li>
+            <li>
+              <a href="../wines/Details/GranNevado/index.html">Gran Nevado</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="carousel">
+      <div class="slide">
+        <img src="./wine image.jpg" alt="Wines Image 1" />
+        <div class="overlay">
+          <div class="overlay-text">
+            <p>
+              Special wines
+              <span style="color: #bc728a"> from a special place</span>
+            </p>
+            <div class="overlay-icons">
+              <i
+                class="fa fa-chevron-left"
+                aria-hidden="true"
+                onclick="changeSlide(-1)"
+              ></i>
+              <i
+                class="fa fa-chevron-right"
+                aria-hidden="true"
+                onclick="changeSlide(1)"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="./grapes.jpg" alt="Wines Image 2" />
+        <div class="overlay">
+          <div class="overlay-text">
+            <p>
+              Passionate about
+              <span style="color: #bc728a"> malbec in the andes</span>
+            </p>
+            <div class="overlay-icons">
+              <i
+                class="fa fa-chevron-left"
+                aria-hidden="true"
+                onclick="changeSlide(-1)"
+              ></i>
+              <i
+                class="fa fa-chevron-right"
+                aria-hidden="true"
+                onclick="changeSlide(1)"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="./mountains-image.jpg" alt="Wines Image 3" />
+        <div class="overlay">
+          <div class="overlay-text">
+            <p>
+              Wines closer to heaver
+              <span style="color: #bc728a"> than to earth</span>
+            </p>
+            <div class="overlay-icons">
+              <i
+                class="fa fa-chevron-left"
+                aria-hidden="true"
+                onclick="changeSlide(-1)"
+              ></i>
+              <i
+                class="fa fa-chevron-right"
+                aria-hidden="true"
+                onclick="changeSlide(1)"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body">
+      <div class="left">
+        <img src="./adentro_malbec-crop-u28702.png" alt="Adentro Bottle Logo" />
+      </div>
+      <div class="right">
+        <h1>Adentro Wines</h1>
+        <p>
+          In the northern part of the Argentinian Andes, near Cachi, lies the
+          vineyard Finca Rio Las Arcas at 2685 meters above sea level, and
+          counts as one of the highest in the world.
+        </p>
+
+        <p>
+          Back in 2005, in this peaceful, valley in which time seemed to have
+          stood still, we began to plant our vines. Our varietals Malbec, Merlot
+          and Torrontés, cover eight hectares, thriving amongst the old Arca
+          trees. These trees have become the hallmark of the vineyard and its
+          leaf decorates our label.
+        </p>
+        <p>
+          Far away from towns and cities, at the foot of the mighty Nevado de
+          Cachi (6400m), we have ideal conditions for cultivating vines. The
+          arid climate with little precipitation, high thermal amplitudes, an
+          abundance of sunshine, along with the unique climate of the region,
+          enables the growth of very high quality grapes. Thanks to the
+          beneficial conditions, very few treatments are required.
+        </p>
+        <p>
+          Since 2011, we produce our wines - the ADENTRO Malbec and ADENTRO
+          Merlot. In 2015 we added the white wine ADENTRO Torrontés to our
+          selection. Our elegant wines are vinified in a very modern Bodegas
+          nearby. Thanks to the climate, we are able to produce fruity, complex,
+          wines with rounded tannins.
+        </p>
+        <p>
+          Our wines are available at the moment in Argentina and Switzerland.
+          <br />
+          Varietals: Malbec, Merlot and Torrontés
+        </p>
+      </div>
+    </section>
+
+    <section class="footer">
+      <p>
+        Vinos Adentro 2685 above sea level <br />
+        Cachi/Argentina
+      </p>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </section>
+
+    <script src="../Header Menu and Modal/header.js"></script>
+
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+        });
+      }
+
+      function changeSlide(direction) {
+        currentSlide =
+          (currentSlide + direction + slides.length) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setInterval(() => {
+          changeSlide(1); // Change slide every X milliseconds
+        }, 5000); // Change the interval time as needed (e.g., every 5 seconds)
+
+        showSlide(currentSlide);
+      });
+    </script>
+  </body>
+</html>
