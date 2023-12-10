@@ -44,6 +44,31 @@ body {
   background-color: #770022;
 }
 
+.demo-gallery{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  width:30%;
+  position: relative;
+  overflow: hidden;
+  margin: 5px; /* Adjust the margin as needed */
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.gallery-image img {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+.gallery-image:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
 .images {
   display: flex;
   flex-wrap: wrap;
@@ -155,32 +180,3 @@ body {
   margin-right: 20%;
 }
 
-.demo-gallery{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.gallery-image {
-  width:30%;
-  position: relative;
-  overflow: hidden;
-  margin: 5px; /* Adjust the margin as needed */
-  transition: transform 0.3s, filter 0.3s;
-}
-
-.gallery-image img {
-  width: 100%;
-  height: 200px;
-  display: block;
-}
-
-.gallery-image:hover {
-  transform: scale(1.06);
-  cursor: pointer;
-}
-
-/* Optional: Style the lightbox overlay */
-.lightbox {
-  background: rgba(0, 0, 0, 0.7);
-}
