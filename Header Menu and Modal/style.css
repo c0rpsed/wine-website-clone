@@ -1,8 +1,17 @@
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, -60%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 20px;
+  padding: 0px 20px;
   background-color: #e6cfac;
 }
 
@@ -46,6 +55,11 @@
   padding: 20px;
   z-index: 1001;
   width: 100%;
+  animation: slideIn 0.3s ease;
+}
+
+.modal-content nav ul li a {
+  font-size: 40px;
 }
 
 .close {
