@@ -90,8 +90,13 @@ body {
   background-color: #c16684;
 }
 
+body{
+  margin:0px;
+}
+
 .footer {
   display: flex;
+  width:100vw;
   background-color: #990033;
   justify-content: space-between;
   color: #fff;
