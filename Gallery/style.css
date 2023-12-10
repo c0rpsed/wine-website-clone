@@ -160,6 +160,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .gallery-image {
   width:30%;
   position: relative;
