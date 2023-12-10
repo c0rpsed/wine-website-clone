@@ -94,6 +94,10 @@ body{
   margin:0px;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .footer {
   display: flex;
   width:100vw;
