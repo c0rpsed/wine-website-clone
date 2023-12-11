@@ -39,7 +39,7 @@ label {
 }
 
 input {
-  width: 60%;
+  width: 90%;
   padding: 8px;
   margin-bottom: 16px;
 }
@@ -56,6 +56,7 @@ input {
 textarea {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+  width:90%;
 }
 
 input[type="checkbox"] {
@@ -111,4 +112,18 @@ input[type="checkbox"] {
   padding: 20px;
   font-size: 40px;
   margin-right: 20%;
+}
+
+@media screen and (max-width: 986px) {
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+
+  .right-section {
+    margin-top: 0;
+  }
+
+  textarea{
+    margin-bottom: 10px;
+  }
 }
