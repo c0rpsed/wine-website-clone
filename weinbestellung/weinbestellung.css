@@ -1,0 +1,114 @@
+body {
+  background-color: #e6cfac;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+}
+
+.grid-container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  justify-content: center;
+  border-bottom: 5px solid #cd8000;
+}
+
+.left-section {
+  padding: 20px;
+}
+
+.left-section h2 {
+  color: #990033;
+}
+
+.right-section {
+  padding: 20px;
+  margin-top: 22%;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 60%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.grid-container .left .radio-btn {
+  width: 13px;
+  height: 13px;
+}
+
+.grid-container .left div {
+  margin-bottom: 20px;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  padding: 10px;
+}
+
+.left h6 {
+  font-size: 16px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.btn {
+  background-color: #990033;
+  height: 60px;
+  width: 200px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #82939e;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  width:100vw;
+  background-color: #990033;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.footer p {
+  font-size: 20px;
+  margin-left: 20%;
+}
+
+.footer i {
+  padding: 20px;
+  font-size: 40px;
+  margin-right: 20%;
+}

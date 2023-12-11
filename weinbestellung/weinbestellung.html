@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weinbestellung</title>
+    <link rel="stylesheet" href="weinbestellung.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home EN</title>
+    
+    <link rel="stylesheet" href="../Header Menu and Modal/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Neuton:ital@1&display=swap");
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <div class="logo">
+        <img
+          src="../Home/original-logo adentro.png"
+          alt="Vinos Adentro Logo"
+          height="80px"
+          width="115px"
+        />
+      </div>
+      <div class="menu" id="openModal">
+        <p>MENU</p>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <div class="modal" id="myModal">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="modal-content">
+        <nav>
+          <ul>
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../About/index.html">About us</a></li>
+            <li>
+              <a href="../wines/index.html">Wines</a>
+              <a href="#" class="next-modal">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i
+                ><i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li><a href="#">Order Wine</a></li>
+            <li><a href="../Gallery/index.html">Gallery</a></li>
+            <li><a href="../Contact Us/index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="modal" id="secondModal">
+      <span class="close" id="closeSecondModal">&times;</span>
+      <div class="modal-content">
+        <nav>
+          <a href="#" class="prev-modal">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i
+            ><i class="fa fa-chevron-left" aria-hidden="true"></i>
+            Back
+          </a>
+          <ul>
+            <li><a href="../wines/Details/Malbec/index.html">Malbec</a></li>
+            <li><a href="../wines/Details/Merlot/index.html">Merlot</a></li>
+            <li>
+              <a href="../wines/Details/Torrentes/index.html">Torrentes</a>
+            </li>
+            <li>
+              <a href="../wines/Details/GranNevado/index.html">Gran Nevado</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="grid-container">
+        <div class="left-section">
+          <h2>Bestellung:</h2>
+          <p>
+            Hier haben Sie die Möglichkeit unsere Weine zu bestellen.
+            (*=Pflichtfelder)
+          </p>
+
+          <label for="email">E-Mail*</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="E-Mail Addresse*"
+          />
+
+          <label for="name">Name und Vorname*</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Name und Vorname*"
+          />
+
+          <label for="plz">PLZ*</label>
+          <input
+            type="number"
+            id="plz"
+            name="plz"
+            required
+            placeholder="PLZ*"
+          />
+
+          <label for="land">Land*</label>
+          <input
+            type="text"
+            id="land"
+            name="land"
+            required
+            placeholder="Land*"
+          />
+
+          <label for="telefon_geschaftlich">Telefon (geschäftlich)</label>
+          <input
+            type="tel"
+            id="telefon_geschaftlich"
+            name="telefon_geschaftlich"
+            placeholder="Telefon G"
+          />
+        </div>
+
+        <div class="right-section">
+          <label for="address">Addresse*</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            required
+            placeholder="Addresse*"
+          />
+
+          <label for="ort">Ort*</label>
+          <input type="text" id="ort" name="ort" required placeholder="Ort*" />
+
+          <label for="telefon_privat">Telefon (privat)</label>
+          <input
+            type="tel"
+            id="telefon_privat"
+            name="telefon_privat"
+            placeholder="Telefon Privat"
+          />
+
+          <label for="handy">Handy</label>
+          <input
+            type="tel"
+            id="handy"
+            name="handy"
+            required
+            placeholder="Telefon Mobile"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container second">
+      <div class="grid-container">
+        <div class="left">
+          <p><strong>Weinbestellung*</strong></p>
+
+          <div>
+            <input class="radio-btn" type="radio" name="malbec" value="1" />1
+            Karton Malbec (CHF, 141.-)<br />
+            <input class="radio-btn" type="radio" name="malbec" value="2" />1
+            Karton Malbec (CHF, 282.-)<br />
+            <input class="radio-btn" type="radio" name="malbec" value="3" />1
+            Karton Malbec (CHF, 423.-)<br />
+          </div>
+
+          <div>
+            <input class="radio-btn" type="radio" name="merlot" value="1" />1
+            Karton Merlot (CHF, 150.-)<br />
+            <input class="radio-btn" type="radio" name="merlot" value="2" />1
+            Karton Merlot (CHF, 300.-)<br />
+            <input class="radio-btn" type="radio" name="merlot" value="3" />1
+            Karton Merlot (CHF, 450.-)<br />
+          </div>
+
+          <div>
+            <input class="radio-btn" type="radio" name="torrontes" value="1" />1
+            Karton Torrontés (CHF, 99.-)<br />
+            <input class="radio-btn" type="radio" name="torrontes" value="2" />1
+            Karton Torrontés (CHF, 198.-)<br />
+            <input class="radio-btn" type="radio" name="torrontes" value="3" />1
+            Karton Torrontés (CHF, 297.-)<br />
+          </div>
+
+          <div>
+            <input
+              class="radio-btn"
+              type="radio"
+              name="granNevado"
+              value="1"
+            />1 Karton Gran Nevado (CHF, 210.-)<br />
+            <input
+              class="radio-btn"
+              type="radio"
+              name="granNevado"
+              value="2"
+            />1 Karton Gran Nevado (CHF, 420.-)<br />
+            <input
+              class="radio-btn"
+              type="radio"
+              name="granNevado"
+              value="3"
+            />1 Karton Gran Nevado (CHF, 360.-)<br />
+          </div>
+          <h6>
+            Lieferkonditiones: Lieferung gegen Rechnung, zahlbar in 30 Tagen.
+          </h6>
+          <label>
+            <input type="checkbox" id="checkbox" />
+            Wir sind mit Ihren Lieferkonditionen einverstanden.
+          </label>
+        </div>
+        <div class="right">
+          <p><strong>Precise pro Karton (1 Karton = 6 Flaschen):</strong></p>
+          <p>Malbec (CHF 141.-) | Merlot(CHF 150.-)</p>
+          <p>Torrontés (CHF 99.-) | Gran Nevado(CHF 210.-)</p>
+          <br />
+          <br />
+          <p><strong>Versandinfo:</strong></p>
+          <p>1 Karton CHF 9.-;2 Kartons CHF 12.-;3 Kartons CHF 15.-</p>
+          <p>Gratislieferung ab einem Bestellwert von CHF 300.-</p>
+          <br />
+          <br />
+          <p><strong>Nachricht:</strong></p>
+          <textarea
+            name="Nachricht"
+            id=""
+            cols="40"
+            rows="7"
+            placeholder="Nachricht"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="container third">
+      <div class="button">
+        <button class="btn">Senden</button>
+      </div>
+    </div>
+    <section class="footer">
+      <p>
+        Vinos Adentro 2685 above sea level <br />
+        Cachi/Argentina
+      </p>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </section>
+
+    <script src="../Header Menu and Modal/header.js"></script>
+  </body>
+</html>
