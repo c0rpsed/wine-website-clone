@@ -1,0 +1,24 @@
+.lang_select {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .lang_select a {
+    text-decoration: none; 
+    color: #333; 
+    margin: 0 5px; 
+  }
+  
+  .lang_select span {
+    color: #333;
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
+  }
+  
+  .lang_select a:hover {
+    text-decoration: underline; 
+  }
+  
