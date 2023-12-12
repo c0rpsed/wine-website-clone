@@ -21,4 +21,10 @@
   .lang_select a:hover {
     text-decoration: underline; 
   }
+
+  @media screen and (max-width: 768px) {
+    .lang_select {
+      right: 14px;
+    }
+  }
   
